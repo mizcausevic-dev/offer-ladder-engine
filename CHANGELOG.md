@@ -14,3 +14,8 @@
   - Shipped initial TypeScript dashboard with overview, offer paths, conversion branches, verification, and docs.
 - v1.0.0
   - Published the repo with browser-rendered proof assets and release-gate validation.
+
+## 2026-06-04
+- v1.1.0
+  - Started the static Pages refresh onto the current Kinetic Gain Style01 rail.
+  - Reserved the custom-domain target and updated repo metadata for the next ship pass.

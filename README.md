@@ -1,6 +1,9 @@
 # Offer Ladder Engine
 
-TypeScript control plane for dynamic offer ladders, session-aware pricing paths, conversion branching, and revenue-yield posture.
+Board-ready offer sequencing surface for session-aware pricing ladders, conversion branching, and revenue-yield posture.
+
+- Live target: [http://offers.kineticgain.com/](http://offers.kineticgain.com/)
+- Repo: [mizcausevic-dev/offer-ladder-engine](https://github.com/mizcausevic-dev/offer-ladder-engine)
 
 ## Why this exists
 
@@ -41,15 +44,10 @@ One pricing page is almost never the right pricing system:
 ```powershell
 cd offer-ladder-engine
 npm install
-npm run dev
+npm run verify
+npm run prerender
+npm run render:assets
 ```
-
-Open:
-- [http://127.0.0.1:5310/](http://127.0.0.1:5310/)
-- [http://127.0.0.1:5310/offer-paths](http://127.0.0.1:5310/offer-paths)
-- [http://127.0.0.1:5310/conversion-branches](http://127.0.0.1:5310/conversion-branches)
-- [http://127.0.0.1:5310/verification](http://127.0.0.1:5310/verification)
-- [http://127.0.0.1:5310/docs](http://127.0.0.1:5310/docs)
 
 ## Validation
 

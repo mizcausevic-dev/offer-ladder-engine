@@ -1,27 +1,28 @@
 {
   "name": "offer-ladder-engine",
-  "version": "1.0.0",
-  "description": "TypeScript control plane for dynamic offer ladders, session-aware pricing paths, and conversion-branch revenue yield.",
+  "version": "1.1.0",
+  "description": "Board-ready Kinetic Gain surface for offer sequencing, session-aware monetization ladders, and conversion-yield posture.",
   "main": "dist/src/app.js",
   "scripts": {
     "dev": "tsx watch src/app.ts",
     "build": "tsc --pretty false",
     "test": "vitest run",
+    "prerender": "tsx scripts/prerender.ts",
     "demo": "tsx scripts/run_demo.ts",
     "smoke": "tsx scripts/smoke_check.ts",
-    "verify": "npm run build && npm run test && npm run demo && npm run smoke",
+    "verify": "npm run build && npm run test && npm run demo && npm run smoke && npm run prerender",
     "render:assets": "powershell -ExecutionPolicy Bypass -File .\\scripts\\render_readme_assets.ps1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mizcausevic-dev/offer-ladder-engine.git"
   },
-  "license": "ISC",
+  "license": "AGPL-3.0-or-later",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/mizcausevic-dev/offer-ladder-engine/issues"
   },
-  "homepage": "https://github.com/mizcausevic-dev/offer-ladder-engine#readme",
+  "homepage": "http://offers.kineticgain.com/",
   "dependencies": {
     "express": "^5.2.1"
   },
