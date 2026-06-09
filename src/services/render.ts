@@ -116,6 +116,45 @@ function pageFrame(title: string, description: string, activePath: string, body:
 </html>`;
 }
 
+function renderProductDepth() {
+  return `<section class="sec">
+      <div class="sec-head">
+        <span class="sec-num">00</span>
+        <div>
+          <h2 class="sec-title">Product depth</h2>
+          <p class="sec-lead">Offer Ladder Engine is a revenue architecture surface for deciding which offer, proof point, and escalation path should meet each buyer segment before the funnel leaks margin.</p>
+        </div>
+      </div>
+      <div class="card-grid">
+        <article class="acard lane-card">
+          <span class="metric-chip">Product depth</span>
+          <h3>What this product does</h3>
+          <p class="lane-copy">It turns acquisition source, intent signals, entry offers, upsell paths, and branch yield into one readable operating view. Non-technical leaders see which offer sequence is safe to scale. Technical teams see the data contract behind the routing logic.</p>
+        </article>
+        <article class="acard lane-card">
+          <span class="metric-chip">GTM analyst lens</span>
+          <h3>Where revenue teams use it</h3>
+          <p class="lane-copy">Use it to compare paid, referral, organic, lifecycle, and partner traffic by ladder quality instead of judging every lane by a single conversion metric. The product shows when an offer is too heavy, too cheap, mistimed, or unsupported by proof.</p>
+        </article>
+        <article class="acard lane-card">
+          <span class="metric-chip">Value architecture</span>
+          <h3>Where the money leaks</h3>
+          <p class="lane-copy">The system surfaces margin leakage from flat pricing pages, premature sales calls, weak trial-to-paid bridges, and missing expansion prompts. Leaders can see the next commercial move before the quarter turns into a post-mortem.</p>
+        </article>
+        <article class="acard lane-card">
+          <span class="metric-chip">Technical proof</span>
+          <h3>What is inspectable</h3>
+          <p class="lane-copy">Static routes, API-style outputs, seeded offer lanes, conversion branch records, and verification checks keep the proof concrete. The repo is not just a landing page; it includes data modeling, route rendering, tests, smoke checks, and screenshot generation.</p>
+        </article>
+        <article class="acard lane-card">
+          <span class="metric-chip">Portfolio pattern</span>
+          <h3>What these repos have in common</h3>
+          <p class="lane-copy">Each Kinetic Gain surface converts operational evidence into board-readable decisions: owner, signal, model, risk, value, route, and verification stay visible together.</p>
+        </article>
+      </div>
+    </section>`;
+}
+
 export function renderOverview() {
   const stats = summary();
   const signals = sessionSignals();
@@ -168,6 +207,7 @@ export function renderOverview() {
         </div>
       </div>
     </section>
+    ${renderProductDepth()}
     <section class="sec">
       <div class="sec-head">
         <span class="sec-num">01</span>
@@ -352,6 +392,7 @@ export function renderDocs() {
 npm run verify
 npm run prerender
 npm run render:assets</div>
-    </section>`
+    </section>
+    ${renderProductDepth()}`
   );
 }

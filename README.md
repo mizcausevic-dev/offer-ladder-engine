@@ -15,6 +15,16 @@ One pricing page is almost never the right pricing system:
 
 `offer-ladder-engine` keeps those dynamics visible in one operator-facing surface so Growth, RevOps, and monetization teams can see which ladders are compounding revenue and which ones are flattening it.
 
+## What this product does
+
+Offer Ladder Engine is a revenue architecture surface for deciding which offer, proof point, and escalation path should meet each buyer segment before the funnel leaks margin. It connects acquisition source, intent signals, entry offers, upsell paths, and branch yield into one operating view.
+
+For a SaaS go-to-market analyst, this answers whether paid, referral, organic, lifecycle, and partner traffic are being evaluated by the right commercial motion instead of one blended conversion rate. It makes it easier to see when an offer is too heavy, too cheap, mistimed, or unsupported by the proof a buyer needs.
+
+For a SaaS value architect, this shows where margin leaks from flat pricing pages, premature sales calls, weak trial-to-paid bridges, and missing expansion prompts. The result is a board-readable view of where revenue can be recovered without simply buying more traffic.
+
+For technical review, the repo includes static routes, API-style outputs, seeded offer lanes, conversion branch records, verification checks, prerendering, and screenshot generation. It fits the broader Kinetic Gain pattern: operational evidence becomes a decision surface with owner, signal, risk, value, route, and verification visible together.
+
 ## Routes
 
 - `/`
